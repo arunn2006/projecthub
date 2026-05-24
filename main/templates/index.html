@@ -1,15 +1,12 @@
-\{% load static %}
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Project Hub.in</title>
+    <meta charset="UTF-8">
+    <title>ProjectHub.in</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'style.css' %}">
-
-    <style>
-        html { scroll-behavior: smooth; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +14,7 @@
 <!-- NAVBAR -->
 <div class="navbar">
     <div class="logo">
-        <img src="{% static 'logo.png' %}" alt="logo">
+        <img src="{% static 'logo.png' %}">
         <h2>ProjectHub.in</h2>
     </div>
 
@@ -33,19 +30,10 @@
     <h1>Build Smart Projects with Confidence</h1>
     <p>AI | Python | IoT | Website Development</p>
 
-    <a href="https://wa.me/91994793872">
-        <button>
-            <img src="https://img.icons8.com/ios-filled/20/ffffff/whatsapp.png">
-            WhatsApp
-        </button>
-    </a>
-
-    <a href="https://instagram.com/project__hub.in">
-        <button>
-            <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png">
-            Instagram
-        </button>
-    </a>
+    <div class="buttons">
+        <a href="https://wa.me/91994793872"><button class="btn primary">WhatsApp</button></a>
+        <a href="https://instagram.com/project__hub.in"><button class="btn secondary">Instagram</button></a>
+    </div>
 </div>
 
 <!-- SERVICES -->
@@ -55,57 +43,45 @@
     <div class="grid">
 
         <div class="card">
-            <img src="https://img.icons8.com/color/96/artificial-intelligence.png">
+            <img src="https://img.icons8.com/color/96/artificial-intelligence.png"/>
             <h3>AI/ML Projects</h3>
-            <p>Smart AI-based solutions</p>
+            <p>Smart AI-based solutions with real demo</p>
             <a href="https://wa.me/91994793872"><button>Get Project</button></a>
         </div>
 
         <div class="card">
-            <img src="https://img.icons8.com/color/96/python.png">
+            <img src="https://img.icons8.com/color/96/python.png"/>
             <h3>Python Projects</h3>
             <p>Automation & software systems</p>
             <a href="https://wa.me/91994793872"><button>Get Project</button></a>
         </div>
 
         <div class="card">
-            <img src="https://img.icons8.com/color/96/robot.png">
+            <img src="https://img.icons8.com/color/96/robot.png"/>
             <h3>IoT Projects</h3>
-            <p>Robotics & automation</p>
+            <p>Robotics & smart automation systems</p>
             <a href="https://wa.me/91994793872"><button>Get Project</button></a>
         </div>
 
         <div class="card">
-            <img src="https://img.icons8.com/color/96/domain.png">
+            <img src="https://img.icons8.com/color/96/domain.png"/>
             <h3>Website Creation</h3>
-            <p>Modern business websites</p>
+            <p>Professional websites for shops & business</p>
             <a href="https://wa.me/91994793872"><button>Get Project</button></a>
         </div>
 
     </div>
 </div>
 
-<!-- PROCESS -->
-<div class="section">
-    <h2>How It Works</h2>
-
-    <div class="grid">
-        <div class="card">1️⃣ Contact Me</div>
-        <div class="card">2️⃣ Share Requirement</div>
-        <div class="card">3️⃣ Get Project</div>
-        <div class="card">4️⃣ Full Support</div>
-    </div>
-</div>
-
 <!-- TRUST -->
-<div class="section">
+<div class="section trust">
     <h2>Why Choose Me</h2>
 
     <div class="grid">
-        <div class="card">✔ Real Projects</div>
-        <div class="card">✔ Documentation</div>
+        <div class="card">✔ Real Working Projects</div>
+        <div class="card">✔ Full Documentation</div>
         <div class="card">✔ Viva Support</div>
-        <div class="card">✔ Easy Explanation</div>
+        <div class="card">✔ Beginner Friendly Explanation</div>
     </div>
 </div>
 
@@ -113,29 +89,18 @@
 <div id="contact" class="cta">
     <h2>Contact Me</h2>
 
-    <p>
-        <img src="https://img.icons8.com/color/24/whatsapp.png">
-        994793872
-    </p>
+    <p>📱 WhatsApp: 994793872</p>
+    <p>📸 Instagram: @project__hub.in</p>
 
-    <p>
-        <img src="https://img.icons8.com/color/24/instagram-new.png">
-        @project__hub.in
-    </p>
+    <div class="buttons">
+        <a href="https://wa.me/91994793872">
+            <button class="btn primary">Chat on WhatsApp</button>
+        </a>
 
-    <a href="https://wa.me/91994793872">
-        <button>
-            <img src="https://img.icons8.com/ios-filled/20/ffffff/whatsapp.png">
-            Chat on WhatsApp
-        </button>
-    </a>
-
-    <a href="https://instagram.com/project__hub.in">
-        <button>
-            <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png">
-            Open Instagram
-        </button>
-    </a>
+        <a href="https://instagram.com/project__hub.in">
+            <button class="btn secondary">Open Instagram</button>
+        </a>
+    </div>
 </div>
 
 </body>
